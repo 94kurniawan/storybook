@@ -1,0 +1,47 @@
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.divider--start::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.divider--center::before,
+.divider--center::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.divider--end::before {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.divider--solid::before,
+.divider--solid::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.divider--dashed::before,
+.divider--dashed::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px dashed #000;
+}
+
