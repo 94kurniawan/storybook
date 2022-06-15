@@ -1,0 +1,11 @@
+$primary: #e829ad;
+$secondary: #3e3e3e;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+$font-size-root: 15px;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
